@@ -1,22 +1,90 @@
 {
   "app": {
     "title": "Discipline Diary",
-    "subtitle": "Track student attendance and discipline"
+    "subtitle": "Keep track of your daily habits"
   },
   "nav": {
     "dashboard": "Dashboard",
-    "students": "Students",
-    "attendance": "Attendance"
+    "tasks": "Tasks",
+    "calendar": "Calendar"
   },
-  "stats": {
-    "students": "Total students",
-    "present": "Present today",
-    "absent": "Absent today"
+  "dashboard": {
+    "rangeWeek": "7 days",
+    "rangeMonth": "This month",
+    "rangeLast30": "Last 30 days",
+    "totalDone": "Completed",
+    "totalMissed": "Missed",
+    "completionRate": "Completion rate",
+    "activeHabits": "Active habits",
+    "perHabit": "By habit",
+    "noHabits": "No habits yet. Add one from the Tasks page.",
+    "loadFailed": "Failed to load statistics"
+  },
+  "calendar": {
+    "subtitle": "Completion status by day",
+    "prevMonth": "Previous month",
+    "nextMonth": "Next month",
+    "legendFull": "All done",
+    "legendPartial": "Partially done",
+    "legendMissed": "Missed",
+    "legendEmpty": "No data",
+    "noHabits": "No habits found for this day",
+    "loadFailed": "Failed to load calendar"
+  },
+  "tasks": {
+    "subtitle": "Mark your daily habits, log a penalty, or edit the list",
+    "addTask": "Add task",
+    "prevDay": "Previous day",
+    "nextDay": "Next day",
+    "today": "Today",
+    "empty": "No active habits yet",
+    "taskActions": "Actions",
+    "name": "Name",
+    "description": "Description",
+    "scheduledTime": "Time",
+    "scheduledTimeHint": "Optional",
+    "nameRequired": "Name is required",
+    "nameMax": "Name must be at most 255 characters",
+    "descriptionMax": "Description must be at most 2000 characters",
+    "timeInvalid": "Time must be in HH:MM format",
+    "createTitle": "New task",
+    "editTitle": "Edit task",
+    "createSuccess": "Task added",
+    "createFailed": "Failed to add task",
+    "updateSuccess": "Task updated",
+    "updateFailed": "Failed to update task",
+    "done": "Done",
+    "missed": "Missed",
+    "pending": "Pending",
+    "markDone": "Did it",
+    "markMissed": "Didn't do it",
+    "editJazo": "Edit penalty",
+    "jazoPlaceholder": "e.g. 30 squats",
+    "jazoEmpty": "Penalty text cannot be empty",
+    "actionFailed": "Failed to perform action",
+    "loadFailed": "Failed to load the list",
+    "archiveTitle": "Delete task",
+    "archiveDescription": "\"{name}\" will be archived, its history is kept but it won't show on new days. Continue?",
+    "archiveSuccess": "Task deleted",
+    "archiveFailed": "Failed to delete task",
+    "hideForDay": "Skip for today",
+    "hideTitle": "Skip for today",
+    "hideDescription": "\"{name}\" will be hidden from the list for this day only (other days are unaffected) and this cannot be undone. Continue?",
+    "hideConfirm": "Hide",
+    "hideSuccess": "Hidden for today",
+    "hideFailed": "Failed to hide the task",
+    "pausedFromBadge": "Stops from {date}",
+    "continueTitle": "Keep this habit going?",
+    "continueQuestion": "Should \"{name}\" keep showing up starting tomorrow?",
+    "pauseFailed": "Failed to perform the request"
   },
   "actions": {
     "save": "Save",
     "cancel": "Cancel",
-    "delete": "Delete"
+    "delete": "Delete",
+    "edit": "Edit",
+    "yes": "Yes",
+    "no": "No"
   },
   "common": {
     "language": "Language",

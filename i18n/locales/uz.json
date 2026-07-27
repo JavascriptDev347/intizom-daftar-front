@@ -1,22 +1,90 @@
 {
   "app": {
     "title": "Intizom daftar",
-    "subtitle": "O'quvchilar davomati va intizomi nazorati"
+    "subtitle": "Kunlik mashg'ulotlaringizni kuzatib boring"
   },
   "nav": {
     "dashboard": "Boshqaruv paneli",
-    "students": "O'quvchilar",
-    "attendance": "Davomat"
+    "tasks": "Vazifalar",
+    "calendar": "Kalendar"
   },
-  "stats": {
-    "students": "Jami o'quvchilar",
-    "present": "Bugun kelganlar",
-    "absent": "Bugun kelmaganlar"
+  "dashboard": {
+    "rangeWeek": "7 kun",
+    "rangeMonth": "Joriy oy",
+    "rangeLast30": "So'nggi 30 kun",
+    "totalDone": "Bajarilgan",
+    "totalMissed": "O'tkazib yuborilgan",
+    "completionRate": "Bajarilish darajasi",
+    "activeHabits": "Faol mashg'ulotlar",
+    "perHabit": "Mashg'ulotlar bo'yicha",
+    "noHabits": "Hali mashg'ulotlar yo'q. Vazifalar bo'limidan qo'shing.",
+    "loadFailed": "Statistikani yuklashda xatolik"
+  },
+  "calendar": {
+    "subtitle": "Kunlar bo'yicha bajarilish holati",
+    "prevMonth": "Oldingi oy",
+    "nextMonth": "Keyingi oy",
+    "legendFull": "Barchasi bajarilgan",
+    "legendPartial": "Qisman bajarilgan",
+    "legendMissed": "O'tkazib yuborilgan",
+    "legendEmpty": "Ma'lumot yo'q",
+    "noHabits": "Bu kun uchun mashg'ulotlar topilmadi",
+    "loadFailed": "Kalendarni yuklashda xatolik"
+  },
+  "tasks": {
+    "subtitle": "Kunlik mashg'ulotlarni belgilang, jazo yozing yoki ro'yxatni tahrirlang",
+    "addTask": "Vazifa qo'shish",
+    "prevDay": "Oldingi kun",
+    "nextDay": "Keyingi kun",
+    "today": "Bugun",
+    "empty": "Hali faol mashg'ulotlar yo'q",
+    "taskActions": "Amallar",
+    "name": "Nomi",
+    "description": "Tavsif",
+    "scheduledTime": "Vaqti",
+    "scheduledTimeHint": "Ixtiyoriy",
+    "nameRequired": "Nomi kiritilishi shart",
+    "nameMax": "Nomi ko'pi bilan 255 belgidan iborat bo'lishi mumkin",
+    "descriptionMax": "Tavsif ko'pi bilan 2000 belgidan iborat bo'lishi mumkin",
+    "timeInvalid": "Vaqt HH:MM shaklida bo'lishi kerak",
+    "createTitle": "Yangi vazifa",
+    "editTitle": "Vazifani tahrirlash",
+    "createSuccess": "Vazifa qo'shildi",
+    "createFailed": "Vazifa qo'shishda xatolik",
+    "updateSuccess": "Vazifa yangilandi",
+    "updateFailed": "Vazifani yangilashda xatolik",
+    "done": "Bajarildi",
+    "missed": "Bajarilmagan",
+    "pending": "Belgilanmagan",
+    "markDone": "Bajardim",
+    "markMissed": "Bajarmadim",
+    "editJazo": "Jazoni tahrirlash",
+    "jazoPlaceholder": "Masalan: 30 marta o'tirib turish",
+    "jazoEmpty": "Jazo matni bo'sh bo'lishi mumkin emas",
+    "actionFailed": "Amalni bajarishda xatolik",
+    "loadFailed": "Ro'yxatni yuklashda xatolik",
+    "archiveTitle": "Vazifani o'chirish",
+    "archiveDescription": "\"{name}\" arxivlanadi, tarixi saqlanib qoladi, lekin yangi kunlarda ko'rinmaydi. Davom etasizmi?",
+    "archiveSuccess": "Vazifa o'chirildi",
+    "archiveFailed": "Vazifani o'chirishda xatolik",
+    "hideForDay": "Bugun uchun o'tkazib yuborish",
+    "hideTitle": "Bugun uchun o'tkazib yuborish",
+    "hideDescription": "\"{name}\" faqat joriy kun uchun ro'yxatdan yashiriladi (boshqa kunlarga ta'sir qilmaydi) va buni bekor qilib bo'lmaydi. Davom etasizmi?",
+    "hideConfirm": "Yashirish",
+    "hideSuccess": "Bugun uchun yashirildi",
+    "hideFailed": "Yashirishda xatolik",
+    "pausedFromBadge": "{date} sanasidan to'xtaydi",
+    "continueTitle": "Bu odatni davom ettirasizmi?",
+    "continueQuestion": "\"{name}\" ertangi kundan boshlab ham ro'yxatda ko'rinishda davom etsinmi?",
+    "pauseFailed": "So'rovni bajarishda xatolik"
   },
   "actions": {
     "save": "Saqlash",
     "cancel": "Bekor qilish",
-    "delete": "O'chirish"
+    "delete": "O'chirish",
+    "edit": "Tahrirlash",
+    "yes": "Ha",
+    "no": "Yo'q"
   },
   "common": {
     "language": "Til",
