@@ -1,0 +1,48 @@
+{
+  "app": {
+    "title": "Discipline Diary",
+    "subtitle": "Track student attendance and discipline"
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "students": "Students",
+    "attendance": "Attendance"
+  },
+  "stats": {
+    "students": "Total students",
+    "present": "Present today",
+    "absent": "Absent today"
+  },
+  "actions": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete"
+  },
+  "common": {
+    "language": "Language",
+    "toLightMode": "Switch to light mode",
+    "toDarkMode": "Switch to dark mode",
+    "unknownError": "Something went wrong"
+  },
+  "auth": {
+    "loginTitle": "Log In",
+    "registerTitle": "Sign Up",
+    "logIn": "Log In",
+    "signUp": "Sign Up",
+    "logout": "Log out",
+    "username": "Username",
+    "email": "Email",
+    "password": "Password",
+    "confirmPassword": "Password confirmation",
+    "usernameMin": "Username must be at least 3 characters",
+    "usernameMax": "Username must be at most 50 characters",
+    "emailInvalid": "Invalid email address",
+    "passwordMin": "Password must be at least 8 characters",
+    "passwordMismatch": "Passwords do not match",
+    "loginFailed": "Login failed",
+    "invalidCredentials": "Incorrect email or password",
+    "registerFailed": "Registration failed",
+    "emailTaken": "This email is already registered",
+    "registerSuccess": "Welcome! Your account has been created."
+  }
+}
