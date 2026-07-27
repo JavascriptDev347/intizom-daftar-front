@@ -14,7 +14,8 @@ const isDark = computed({
 const links = computed(() => [
   { label: t('nav.dashboard'), icon: 'i-lucide-layout-dashboard', to: '/' },
   { label: t('nav.tasks'), icon: 'i-lucide-list-checks', to: '/tasks' },
-  { label: t('nav.calendar'), icon: 'i-lucide-calendar-days', to: '/calendar' }
+  { label: t('nav.calendar'), icon: 'i-lucide-calendar-days', to: '/calendar' },
+  { label: t('nav.settings'), icon: 'i-lucide-settings', to: '/settings' }
 ])
 
 function isActive(to: string) {

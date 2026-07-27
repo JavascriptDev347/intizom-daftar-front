@@ -15,7 +15,7 @@ export interface DashboardData {
   RangeTo: string
   TotalDone: number
   TotalMissed: number
-  PerHabit: HabitStat[]
+  PerHabit: HabitStat[] | null
 }
 
 /** from/to berilmasa — backend oxirgi 30 kunni qaytaradi. */

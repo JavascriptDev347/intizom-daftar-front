@@ -6,7 +6,8 @@
   "nav": {
     "dashboard": "Boshqaruv paneli",
     "tasks": "Vazifalar",
-    "calendar": "Kalendar"
+    "calendar": "Kalendar",
+    "settings": "Sozlamalar"
   },
   "dashboard": {
     "rangeWeek": "7 kun",
@@ -17,8 +18,10 @@
     "completionRate": "Bajarilish darajasi",
     "activeHabits": "Faol mashg'ulotlar",
     "perHabit": "Mashg'ulotlar bo'yicha",
-    "noHabits": "Hali mashg'ulotlar yo'q. Vazifalar bo'limidan qo'shing.",
-    "loadFailed": "Statistikani yuklashda xatolik"
+    "loadFailed": "Statistikani yuklashda xatolik",
+    "welcomeTitle": "Intizom daftarga xush kelibsiz!",
+    "welcomeDescription": "Bu ilova sizga odatlaringizni shakllantirishga yordam beradi: har kuni mashg'ulotingizni \"bajardim\" yoki \"bajarmadim\" deb belgilaysiz, o'tkazib yuborgan kunlar uchun jazo yozib qo'yasiz, ilova esa ketma-ketligingiz (streak) va bajarilish darajangizni avtomatik hisoblab, shu yerda ko'rsatib boradi. Hozircha hali bironta vazifa qo'shilmagan — boshlash uchun birinchisini yarating.",
+    "welcomeCta": "Birinchi vazifani qo'shish"
   },
   "calendar": {
     "subtitle": "Kunlar bo'yicha bajarilish holati",
@@ -78,6 +81,29 @@
     "continueQuestion": "\"{name}\" ertangi kundan boshlab ham ro'yxatda ko'rinishda davom etsinmi?",
     "pauseFailed": "So'rovni bajarishda xatolik"
   },
+  "settings": {
+    "title": "Sozlamalar",
+    "subtitle": "Hisobingiz va integratsiyalarni boshqaring",
+    "telegram": {
+      "title": "Telegram bog'lash",
+      "description": "Telegramga bog'lansangiz, botdan /my-tasks buyrug'i bilan bugungi vazifalaringizni olishingiz va eslatma xabarlarini qabul qilishingiz mumkin bo'ladi.",
+      "connectCta": "Telegramga bog'lash",
+      "cooldown": "Qayta urinish: {seconds}",
+      "openedTitle": "Telegram ochildi",
+      "openedDescription": "Agar avtomatik ochilmagan bo'lsa, quyidagi tugmani bosing.",
+      "openBot": "Botni ochish",
+      "codeLabel": "Kod",
+      "copy": "Nusxalash",
+      "copied": "Nusxalandi",
+      "copyFailed": "Nusxalab bo'lmadi",
+      "expiresIn": "Kod {time} ichida eskiradi",
+      "expiredTitle": "Kod muddati tugadi",
+      "expiredDescription": "Yangi kod so'rang va uni botga qayta yuboring.",
+      "retry": "Yangi kod olish",
+      "requestFailed": "Bog'lash kodini olishda xatolik",
+      "rateLimited": "Biroz kuting"
+    }
+  },
   "actions": {
     "save": "Saqlash",
     "cancel": "Bekor qilish",
@@ -111,6 +137,20 @@
     "invalidCredentials": "Elektron pochta yoki parol noto'g'ri",
     "registerFailed": "Ro'yxatdan o'tishda xatolik yuz berdi",
     "emailTaken": "Bu elektron pochta allaqachon ro'yxatdan o'tgan",
-    "registerSuccess": "Xush kelibsiz! Hisobingiz yaratildi."
+    "registerSuccess": "Xush kelibsiz! Hisobingiz yaratildi.",
+    "or": "yoki",
+    "telegramLoginCta": "Telegram orqali kirish",
+    "telegramRequestFailed": "Telegram orqali kirishni boshlashda xatolik",
+    "telegramWaitingTitle": "Botda tasdiqlashni kuting",
+    "telegramWaitingDescription": "Telegram ochilishi kerak edi. Ochilmagan bo'lsa, pastdagi tugmani bosib, botga o'ting.",
+    "telegramOpenBot": "Botni ochish",
+    "telegramExpiresIn": "{time} ichida amal qiladi",
+    "telegramExpiredTitle": "Havola muddati tugadi",
+    "telegramExpiredDescription": "Qaytadan urinib ko'ring — yangi havola so'raladi.",
+    "telegramRetry": "Qaytadan urinish",
+    "telegramNotLinkedTitle": "Bu Telegram akkaunt bog'lanmagan",
+    "telegramNotLinkedDescription": "Avval email va parol orqali kiring, so'ng sozlamalardan Telegram'ni ulang.",
+    "telegramBackToPassword": "Email bilan kirish",
+    "telegramCancel": "Bekor qilish"
   }
 }

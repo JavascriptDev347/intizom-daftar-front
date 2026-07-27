@@ -72,13 +72,16 @@ const stats = computed(() => [
     key: 'activeHabits',
     icon: 'i-lucide-list-checks',
     color: 'text-primary',
-    value: data.value?.PerHabit.length ?? 0
+    value: data.value?.PerHabit?.length ?? 0
   }
 ])
 
 const sortedHabits = computed(
   () => [...(data.value?.PerHabit ?? [])].sort((a, b) => b.CurrentStreak - a.CurrentStreak)
 )
+
+/** Birinchi marta kirgan (hali bironta habit yaratmagan) foydalanuvchi uchun. */
+const isEmpty = computed(() => !loading.value && !!data.value && !data.value.PerHabit?.length)
 
 function streakColor(streak: number) {
   if (streak >= 7) return 'success'
@@ -114,47 +117,56 @@ function streakColor(streak: number) {
       <USkeleton v-for="i in 4" :key="i" class="h-24 w-full" />
     </div>
 
-    <div v-else class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-      <UCard v-for="s in stats" :key="s.key">
-        <div class="flex items-center gap-3">
-          <UIcon :name="s.icon" class="size-8" :class="s.color" />
-          <div>
-            <p class="text-sm text-muted">{{ t(`dashboard.${s.key}`) }}</p>
-            <p class="text-2xl font-semibold">{{ s.value }}</p>
-          </div>
+    <UCard v-else-if="isEmpty">
+      <div class="mx-auto flex max-w-md flex-col items-center gap-4 py-10 text-center">
+        <div class="flex size-16 items-center justify-center rounded-full bg-primary/10">
+          <UIcon name="i-lucide-sparkles" class="size-8 text-primary" />
         </div>
-      </UCard>
-    </div>
-
-    <div>
-      <h2 class="mb-3 text-lg font-medium">{{ t('dashboard.perHabit') }}</h2>
-
-      <div v-if="loading" class="space-y-3">
-        <USkeleton v-for="i in 3" :key="i" class="h-16 w-full" />
+        <div class="space-y-2">
+          <h2 class="text-xl font-semibold">{{ t('dashboard.welcomeTitle') }}</h2>
+          <p class="text-muted">{{ t('dashboard.welcomeDescription') }}</p>
+        </div>
+        <UButton icon="i-lucide-plus" size="lg" to="/tasks">
+          {{ t('dashboard.welcomeCta') }}
+        </UButton>
       </div>
+    </UCard>
 
-      <UCard v-else-if="sortedHabits.length === 0">
-        <p class="py-6 text-center text-muted">{{ t('dashboard.noHabits') }}</p>
-      </UCard>
-
-      <div v-else class="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-        <UCard v-for="h in sortedHabits" :key="h.Habit.ID">
-          <p class="mb-3 truncate font-medium">{{ h.Habit.Name }}</p>
-          <div class="flex items-center justify-between text-sm">
-            <span class="flex items-center gap-1 text-success">
-              <UIcon name="i-lucide-check" class="size-4" />
-              {{ h.DoneCount }}
-            </span>
-            <span class="flex items-center gap-1 text-error">
-              <UIcon name="i-lucide-x" class="size-4" />
-              {{ h.MissedCount }}
-            </span>
-            <UBadge :color="streakColor(h.CurrentStreak)" variant="subtle" icon="i-lucide-flame">
-              {{ h.CurrentStreak }}
-            </UBadge>
+    <template v-else>
+      <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <UCard v-for="s in stats" :key="s.key">
+          <div class="flex items-center gap-3">
+            <UIcon :name="s.icon" class="size-8" :class="s.color" />
+            <div>
+              <p class="text-sm text-muted">{{ t(`dashboard.${s.key}`) }}</p>
+              <p class="text-2xl font-semibold">{{ s.value }}</p>
+            </div>
           </div>
         </UCard>
       </div>
-    </div>
+
+      <div>
+        <h2 class="mb-3 text-lg font-medium">{{ t('dashboard.perHabit') }}</h2>
+
+        <div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+          <UCard v-for="h in sortedHabits" :key="h.Habit.ID">
+            <p class="mb-3 truncate font-medium">{{ h.Habit.Name }}</p>
+            <div class="flex items-center justify-between text-sm">
+              <span class="flex items-center gap-1 text-success">
+                <UIcon name="i-lucide-check" class="size-4" />
+                {{ h.DoneCount }}
+              </span>
+              <span class="flex items-center gap-1 text-error">
+                <UIcon name="i-lucide-x" class="size-4" />
+                {{ h.MissedCount }}
+              </span>
+              <UBadge :color="streakColor(h.CurrentStreak)" variant="subtle" icon="i-lucide-flame">
+                {{ h.CurrentStreak }}
+              </UBadge>
+            </div>
+          </UCard>
+        </div>
+      </div>
+    </template>
   </div>
 </template>

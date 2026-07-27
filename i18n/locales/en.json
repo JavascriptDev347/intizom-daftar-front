@@ -6,7 +6,8 @@
   "nav": {
     "dashboard": "Dashboard",
     "tasks": "Tasks",
-    "calendar": "Calendar"
+    "calendar": "Calendar",
+    "settings": "Settings"
   },
   "dashboard": {
     "rangeWeek": "7 days",
@@ -17,8 +18,10 @@
     "completionRate": "Completion rate",
     "activeHabits": "Active habits",
     "perHabit": "By habit",
-    "noHabits": "No habits yet. Add one from the Tasks page.",
-    "loadFailed": "Failed to load statistics"
+    "loadFailed": "Failed to load statistics",
+    "welcomeTitle": "Welcome to Discipline Diary!",
+    "welcomeDescription": "This app helps you build habits: mark each daily habit as done or missed, log a penalty for days you miss, and watch your streaks and completion rate get calculated and shown right here automatically. You haven't added any tasks yet — create your first one to get started.",
+    "welcomeCta": "Add your first task"
   },
   "calendar": {
     "subtitle": "Completion status by day",
@@ -78,6 +81,29 @@
     "continueQuestion": "Should \"{name}\" keep showing up starting tomorrow?",
     "pauseFailed": "Failed to perform the request"
   },
+  "settings": {
+    "title": "Settings",
+    "subtitle": "Manage your account and integrations",
+    "telegram": {
+      "title": "Connect Telegram",
+      "description": "Link your Telegram account to get today's tasks from the bot with /my-tasks and receive reminder messages.",
+      "connectCta": "Connect Telegram",
+      "cooldown": "Retry in: {seconds}",
+      "openedTitle": "Telegram opened",
+      "openedDescription": "If it didn't open automatically, use the button below.",
+      "openBot": "Open bot",
+      "codeLabel": "Code",
+      "copy": "Copy",
+      "copied": "Copied",
+      "copyFailed": "Could not copy",
+      "expiresIn": "Code expires in {time}",
+      "expiredTitle": "Code expired",
+      "expiredDescription": "Request a new code and send it to the bot again.",
+      "retry": "Get a new code",
+      "requestFailed": "Failed to get the linking code",
+      "rateLimited": "Please wait a moment"
+    }
+  },
   "actions": {
     "save": "Save",
     "cancel": "Cancel",
@@ -111,6 +137,20 @@
     "invalidCredentials": "Incorrect email or password",
     "registerFailed": "Registration failed",
     "emailTaken": "This email is already registered",
-    "registerSuccess": "Welcome! Your account has been created."
+    "registerSuccess": "Welcome! Your account has been created.",
+    "or": "or",
+    "telegramLoginCta": "Log in with Telegram",
+    "telegramRequestFailed": "Failed to start Telegram login",
+    "telegramWaitingTitle": "Waiting for confirmation in the bot",
+    "telegramWaitingDescription": "Telegram should have opened. If it didn't, use the button below to go to the bot.",
+    "telegramOpenBot": "Open bot",
+    "telegramExpiresIn": "Valid for {time}",
+    "telegramExpiredTitle": "Link expired",
+    "telegramExpiredDescription": "Try again — a new link will be requested.",
+    "telegramRetry": "Try again",
+    "telegramNotLinkedTitle": "This Telegram account isn't linked",
+    "telegramNotLinkedDescription": "Log in with email and password first, then connect Telegram from settings.",
+    "telegramBackToPassword": "Log in with email",
+    "telegramCancel": "Cancel"
   }
 }

@@ -172,6 +172,10 @@ async function onConfirmHide() {
 }
 
 function actionsFor(item: EntryItem) {
+  // Kelajakdagi kun uchun "delete" arxivlasa, habit BUGUNGI kundan ham
+  // yo'qolib qoladi (IsArchived kun bo'yicha emas). Shu sabab kelajak
+  // kunlarda delete = shu kunga hide, faqat bugun/o'tmishda haqiqiy arxiv.
+  const isFutureDay = selectedDate.value > todayKey()
   return [
     [
       { label: t('actions.edit'), icon: 'i-lucide-pencil', onSelect: () => openEdit(item.Habit) },
@@ -186,7 +190,7 @@ function actionsFor(item: EntryItem) {
         label: t('actions.delete'),
         icon: 'i-lucide-trash-2',
         color: 'error' as const,
-        onSelect: () => askArchive(item.Habit)
+        onSelect: () => (isFutureDay ? askHide(item) : askArchive(item.Habit))
       }
     ]
   ]

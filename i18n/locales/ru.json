@@ -6,7 +6,8 @@
   "nav": {
     "dashboard": "Панель",
     "tasks": "Задачи",
-    "calendar": "Календарь"
+    "calendar": "Календарь",
+    "settings": "Настройки"
   },
   "dashboard": {
     "rangeWeek": "7 дней",
@@ -17,8 +18,10 @@
     "completionRate": "Процент выполнения",
     "activeHabits": "Активные привычки",
     "perHabit": "По привычкам",
-    "noHabits": "Привычек пока нет. Добавьте их на странице «Задачи».",
-    "loadFailed": "Не удалось загрузить статистику"
+    "loadFailed": "Не удалось загрузить статистику",
+    "welcomeTitle": "Добро пожаловать в Дневник дисциплины!",
+    "welcomeDescription": "Это приложение помогает формировать привычки: каждый день отмечайте привычку как выполненную или пропущенную, записывайте штраф за пропущенные дни, а приложение само считает и показывает здесь вашу серию (streak) и процент выполнения. Пока у вас нет ни одной задачи — создайте первую, чтобы начать.",
+    "welcomeCta": "Добавить первую задачу"
   },
   "calendar": {
     "subtitle": "Статус выполнения по дням",
@@ -78,6 +81,29 @@
     "continueQuestion": "Показывать «{name}» и дальше, начиная с завтрашнего дня?",
     "pauseFailed": "Не удалось выполнить запрос"
   },
+  "settings": {
+    "title": "Настройки",
+    "subtitle": "Управляйте аккаунтом и интеграциями",
+    "telegram": {
+      "title": "Привязать Telegram",
+      "description": "Привяжите Telegram, чтобы получать сегодняшние задачи у бота командой /my-tasks и напоминания.",
+      "connectCta": "Привязать Telegram",
+      "cooldown": "Повтор через: {seconds}",
+      "openedTitle": "Telegram открыт",
+      "openedDescription": "Если он не открылся автоматически, нажмите кнопку ниже.",
+      "openBot": "Открыть бота",
+      "codeLabel": "Код",
+      "copy": "Копировать",
+      "copied": "Скопировано",
+      "copyFailed": "Не удалось скопировать",
+      "expiresIn": "Код истекает через {time}",
+      "expiredTitle": "Срок действия кода истёк",
+      "expiredDescription": "Запросите новый код и отправьте его боту снова.",
+      "retry": "Получить новый код",
+      "requestFailed": "Не удалось получить код привязки",
+      "rateLimited": "Подождите немного"
+    }
+  },
   "actions": {
     "save": "Сохранить",
     "cancel": "Отмена",
@@ -111,6 +137,20 @@
     "invalidCredentials": "Неверная почта или пароль",
     "registerFailed": "Не удалось зарегистрироваться",
     "emailTaken": "Эта почта уже зарегистрирована",
-    "registerSuccess": "Добро пожаловать! Аккаунт создан."
+    "registerSuccess": "Добро пожаловать! Аккаунт создан.",
+    "or": "или",
+    "telegramLoginCta": "Войти через Telegram",
+    "telegramRequestFailed": "Не удалось начать вход через Telegram",
+    "telegramWaitingTitle": "Ожидание подтверждения в боте",
+    "telegramWaitingDescription": "Telegram должен был открыться. Если этого не произошло, нажмите кнопку ниже.",
+    "telegramOpenBot": "Открыть бота",
+    "telegramExpiresIn": "Действительно ещё {time}",
+    "telegramExpiredTitle": "Срок действия ссылки истёк",
+    "telegramExpiredDescription": "Попробуйте снова — будет запрошена новая ссылка.",
+    "telegramRetry": "Попробовать снова",
+    "telegramNotLinkedTitle": "Этот Telegram-аккаунт не привязан",
+    "telegramNotLinkedDescription": "Сначала войдите по email и паролю, затем привяжите Telegram в настройках.",
+    "telegramBackToPassword": "Войти по email",
+    "telegramCancel": "Отмена"
   }
 }
