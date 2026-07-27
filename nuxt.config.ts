@@ -10,7 +10,7 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       // Go backend manzili — .env da NUXT_PUBLIC_API_BASE orqali o'zgartiriladi
-      apiBase: 'http://localhost:8080/api'
+      apiBase: process.env.NUXT_PUBLIC_API_BASE || 'http://localhost:8080/api'
     }
   },
 
